@@ -31,3 +31,7 @@ Route::middleware([
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::namespace('App\Http\Controllers')->group(function(){
+    Route::get('/course', 'TsaiController@course');
+});

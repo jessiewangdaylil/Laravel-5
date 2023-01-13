@@ -7,11 +7,7 @@
     <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
     <title>@yield('title')</title></title>
-=======
-    <title>@yield('title')</title>
->>>>>>> 琬渝
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
@@ -19,7 +15,6 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-<<<<<<< HEAD
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/nice-select.css')}}" type="text/css">
@@ -28,15 +23,6 @@
     <link rel="stylesheet" href="{{asset('css/slicknav.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
     @yield('css')
-=======
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/nice-select.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/slicknav.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
->>>>>>> 琬渝
 </head>
 
 <body>
@@ -61,8 +47,7 @@
         <div class="container-fluid">
             <div class="inner-header">
                 <div class="logo">
-<<<<<<< HEAD
-                    <a href="{{url('/index')}}"><img src="{{asset('img/logos/Laravel Five Logo.png')}}" alt=""></a>
+                    <a href="{{url('/')}}"><img src="{{asset('img/logos/Laravel Five Logo.png')}}" alt=""></a>
                 </div>
                 <div class="header-right">
                     <img src="{{asset('img/icons/search.png')}}" alt="" class="search-trigger">
@@ -70,26 +55,16 @@
                     <img src="{{asset('img/icons/man.png')}}" alt=""></a>
                     <a href="{{url('/checkout')}}">
                         <img src="{{asset('img/icons/cart.png')}}" alt="">
-=======
-                    <a href="./index.html"><img src="{{ asset('img/logo.png') }}" alt=""></a>
-                </div>
-                <div class="header-right">
-                    <img src="{{ asset('img/icons/search.png') }}" alt="" class="search-trigger">
-                    <img src="{{ asset('img/icons/man.png') }}" alt="">
-                    <a href="#">
-                        <img src="{{ asset('img/icons/bag.png') }}" alt="">
->>>>>>> 琬渝
                         <span>2</span>
                     </a>
                 </div>
                 <div class="user-access">
-<<<<<<< HEAD
                     <a href="{{url('/register')}}">{{__('Register')}}</a>
                     <a href="{{url('/login')}}" class="in">{{__('Sign in')}}</a>
                 </div>
                 <nav class="main-menu mobile-menu">
                     <ul>
-                        <li><a class="active" href="{{url('/index')}}">{{__('Home')}}</a></li>
+                        <li><a class="active" href="{{url('/')}}">{{__('Home')}}</a></li>
                         <li><a>{{__('Course')}}</a>
                             <ul class="sub-menu">
                                <li><a href="{{url('/course')}}">{{__('Course')}}</a></li>
@@ -107,24 +82,6 @@
 
 
 
-=======
-                    <a href="#">Register</a>
-                    <a href="#" class="in">Sign in</a>
-                </div>
-                <nav class="main-menu mobile-menu">
-                    <ul>
-                        <li><a class="active" href="./index.html">Home</a></li>
-                        <li><a href="./categories.html">Shop</a>
-                            <ul class="sub-menu">
-                                <li><a href="product-page.html">Product Page</a></li>
-                                <li><a href="shopping-cart.html">Shopping Card</a></li>
-                                <li><a href="check-out.html">Check out</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./product-page.html">About</a></li>
-                        <li><a href="./check-out.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
->>>>>>> 琬渝
                     </ul>
                 </nav>
             </div>
@@ -136,31 +93,19 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="header-item">
-<<<<<<< HEAD
                         <img src="img/icons/delivery.png" alt="">
-=======
-                        <img src="{{ asset('img/icons/delivery.png') }}" alt="">
->>>>>>> 琬渝
                         <p>Free shipping on orders over $30 in USA</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-left text-lg-center">
                     <div class="header-item">
-<<<<<<< HEAD
                         <img src="img/icons/voucher.png" alt="">
-=======
-                        <img src="{{ asset('img/icons/voucher.png') }}" alt="">
->>>>>>> 琬渝
                         <p>20% Student Discount</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-left text-xl-right">
                     <div class="header-item">
-<<<<<<< HEAD
                     <img src="img/icons/sales.png" alt="">
-=======
-                    <img src="{{ asset('img/icons/sales.png') }}" alt="">
->>>>>>> 琬渝
                     <p>30% off on dresses. Use code: 30OFF</p>
                 </div>
                 </div>
@@ -170,12 +115,8 @@
     <!-- Header Info End -->
     <!-- Header End -->
 
-<<<<<<< HEAD
  @yield('content');
     <!-- Logo Section End -->
-=======
-@yield('content')
->>>>>>> 琬渝
 
     <!-- Footer Section Begin -->
     <footer class="footer-section spad">
@@ -267,7 +208,6 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-<<<<<<< HEAD
     <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
@@ -277,16 +217,6 @@
     <script src="{{asset('js/mixitup.min.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
      @yield('javascript')
-=======
-    <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.slicknav.js') }}"></script>
-    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.nice-select.min.js') }}"></script>
-    <script src="{{ asset('js/mixitup.min.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
->>>>>>> 琬渝
 </body>
 
 </html>

@@ -69,7 +69,7 @@
                             <ul class="sub-menu">
                                <li><a href="{{url('/course')}}">{{__('Course')}}</a></li>
                                 <li><a href="{{url('/information')}}">{{__('Information')}} </a></li>
-                                <li><a href="{{url('/information')}}">{{__('Information')}}</a></li>
+                                <li><a href="{{url('/professor')}}">{{__('Professor')}}</a></li>
                             </ul>
                          <li><a href="{{url('/wish')}}">{{__('Wish')}}</a></li>
                          <li><a>{{__('AboutString')}}</a>

@@ -13,9 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
+<<<<<<< HEAD
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+=======
+Route::get('/', function () {
+    return view('index');
+});
+>>>>>>> 琬渝
 
 Route::middleware([
     'auth:sanctum',
@@ -29,6 +35,7 @@ Route::middleware([
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+<<<<<<< HEAD
 });
 
 Route::namespace ('App\Http\Controllers')->group(function () {
@@ -42,4 +49,6 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('/contact', 'ContactController@contact');
     Route::get('/signup', 'SignupController@signup');
 
+=======
+>>>>>>> 琬渝
 });

@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="page-breadcrumb">
-                        <h2>結帳頁面<span>.</span></h2>
+                        <h2>{{__('CheckOut')}}<span>.</span></h2>
                     </div>
                 </div>
                 <div class="col-lg-8">

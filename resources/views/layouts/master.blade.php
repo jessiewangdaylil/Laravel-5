@@ -53,25 +53,24 @@
                     <img src="{{asset('img/icons/search.png')}}" alt="" class="search-trigger">
                     <a href="{{url('/dashboard')}}">
                     <img src="{{asset('img/icons/man.png')}}" alt=""></a>
-                    <a href="{{url('/checkout')}}">
+                    <a href="{{url('/cart')}}">
                         <img src="{{asset('img/icons/cart.png')}}" alt="">
                         <span>2</span>
                     </a>
                 </div>
                 <div class="user-access">
                     <a href="{{url('/register')}}">{{__('Register')}}</a>
-                    <a href="{{url('/login')}}" class="in">{{__('Sign in')}}</a>
+                    <a href="{{url('/login')}}" class="in">{{__('SignIn')}}</a>
                 </div>
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li><a class="active" href="{{url('/')}}">{{__('Home')}}</a></li>
-                        <li><a>{{__('Course')}}</a>
+                        <li><a>{{__('CourseString')}}</a>
                             <ul class="sub-menu">
                                <li><a href="{{url('/course')}}">{{__('Course')}}</a></li>
                                 <li><a href="{{url('/information')}}">{{__('Information')}} </a></li>
-                                <li><a href="{{url('/wish')}}">{{__('Wish')}}</a></li>
+                                <li><a href="{{url('/information')}}">{{__('Information')}}</a></li>
                             </ul>
-                         <li><a href="{{url('/signup')}}">{{__('Sign up')}}</a></li>
                          <li><a href="{{url('/wish')}}">{{__('Wish')}}</a></li>
                          <li><a>{{__('AboutString')}}</a>
                             <ul class="sub-menu">
@@ -79,7 +78,13 @@
                               <li><a href="{{url('/contact')}}">{{__('Contact')}}</a></li>
                             </ul>
                         </li>
-
+                        <li><a>{{__('Otherpage')}}</a>
+                            <ul class="sub-menu">
+                              <li><a href="{{url('/cart')}}">{{__('Cart')}}</a></li>
+                              <li><a href="{{url('/checkout')}}">{{__('CheckOut')}}</a></li>
+                              <li><a href="{{url('/confirmation')}}">{{__('Confirmation')}}</a></li>
+                            </ul>
+                        </li>
 
 
                     </ul>

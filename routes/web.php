@@ -41,5 +41,5 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('/wish', 'WishController@wish');
     Route::get('/contact', 'ContactController@contact');
     Route::get('/signup', 'SignupController@signup');
-
+    Route::get('/cart', 'CartController@cart');
 });

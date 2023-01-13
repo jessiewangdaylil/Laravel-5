@@ -1,10 +1,10 @@
 {{-- 繼承 --}}
 @extends('layouts.master')
 {{-- 標籤頁名稱 --}}
-@section('title','課程總攬')
+@section('title','課程總覽')
 @section('content')
 
-    
+
     <!-- Latest Product Begin -->
     <section class="latest-products spad">
         <div class="container">
@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="section-title">
-                            <h2>課程總攬</h2>
+                            <h2>課程總覽</h2>
                         </div>
                         <ul class="product-controls">
                             <li data-filter="*">All</li>
@@ -173,7 +173,7 @@
     </section>
     <!-- Latest Product End -->
 
-    
+
     <!-- Features Section Begin -->
     <section class="features-section spad">
         <div class="features-ads">

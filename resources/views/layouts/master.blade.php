@@ -83,7 +83,7 @@
                             <ul class="sub-menu">
                               <li><a href="{{url('/cart')}}">{{__('Cart')}}</a></li>
                               <li><a href="{{url('/checkout')}}">{{__('CheckOut')}}</a></li>
-                              <li><a href="{{url('/confirmation')}}">{{__('Confirmation')}}</a></li>
+                              <li><a href="{{url('/information')}}">{{__('information')}}</a></li>
                             </ul>
                         </li>
 

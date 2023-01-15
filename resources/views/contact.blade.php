@@ -5,19 +5,35 @@
 
 @section('content')
 
+<script>
+// <!-- Flash Message Overlay會用到，需保留 -->
+$('#flash-overlay-modal').modal();
+// <!-- Flash Message 3秒之後消失，非必須 -->
+$('div.alert').delay(3000).fadeOut(350);
+</script>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
     <!-- Page Add Section Begin -->
     <section class="page-add">
         <div class="container">
+          @foreach ($infos as $info)
             <div class="row">
                 <div class="col-lg-4">
                     <div class="page-breadcrumb">
-                        <h2>Contact us<span>.</span></h2>
+                        <h2>{{ $info->title }}<span>.</span></h2>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <img src="{{ asset('img/add.jpg') }}" alt="">
+                <div class="col-lg-6">
+                    <div class="page-breadcrumb">
+                        @include('flash::message')
+                    </div>
                 </div>
+                {{-- <div class="col-lg-8">
+                    <img src="{{ Voyager::image($info->pic) }}" alt="">
+                </div> --}}
             </div>
+          @endforeach
         </div>
     </section>
     <!-- Page Add Section End -->
@@ -27,21 +43,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <form action="#" class="contact-form">
+                    <form action="sendmessage" class="contact-form">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="First Name">
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="{{ __('Name') }}" id="name"  name="name" required>
                             </div>
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="Last Name">
+                            {{-- <div class="col-lg-2">
+                              <select name="Salutation">
+                                <option value="PHP">PHP</option>
+                                <option value="Python">Python</option>
+                                <option value="Java">Java</option>
+                              </select>
+                            </div> --}}
+                            <div class="col-lg-3">
+                                <input type="text" placeholder="{{ __('Phone') }}" id="phone" name="phone" required>
+                            </div>
+                            <div class="col-lg-5">
+                                <input type="email" placeholder="{{ __('E-mail') }}" id="email"  name="email">
                             </div>
                             <div class="col-lg-12">
-                                <input type="email" placeholder="E-mail">
-                                <input type="text" placeholder="Subject">
-                                <textarea placeholder="Message"></textarea>
+                                <input type="text" placeholder="{{ __('Subject') }}" id="subject"  name="subject" required>
+                                <textarea placeholder="{{ __('Message') }}" id="message"  name="message" required></textarea>
                             </div>
                             <div class="col-lg-12 text-right">
-                                <button type="submit">Send message</button>
+                                <button type="submit">{{ __('Send message') }}</button>
                             </div>
                         </div>
                     </form>
@@ -49,30 +74,30 @@
                 <div class="col-lg-3 offset-lg-1">
                     <div class="contact-widget">
                         <div class="cw-item">
-                            <h5>Location</h5>
+                            <h5>{{ __('Location') }}</h5>
                             <ul>
-                                <li>1525 Awesome Lane, </li>
+                                <li>{{ setting('association.location') }}</li>
                                 <li>Los Angeles, CA</li>
                             </ul>
                         </div>
                         <div class="cw-item">
-                            <h5>Phone</h5>
+                            <h5>{{ __('Phone') }}</h5>
                             <ul>
-                                <li>+1 (603)535-4592</li>
+                                <li>{{ setting('association.phone') }}</li>
                                 <li>+1 (603)535-4556</li>
                             </ul>
                         </div>
                         <div class="cw-item">
-                            <h5>E-mail</h5>
+                            <h5>{{ __('E-mail') }}</h5>
                             <ul>
-                                <li>contact@violetstore.com</li>
+                                <li>{{ setting('association.email') }}</li>
                                 <li>www.violetstore.com</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="map">
+            {{-- <div class="map">
                 <div class="row">
                     <div class="col-lg-12">
                         <iframe
@@ -80,7 +105,7 @@
                             height="560" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <!-- Contact Section End -->

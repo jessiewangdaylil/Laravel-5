@@ -13,5 +13,13 @@
 "CheckOut":"結帳頁面",
 "Confirmation":"訂單資訊",
 "SignIn":"登入",
-"Register":"註冊"
+"Register":"註冊",
+"Name":"姓名",
+"Phone":"電話",
+"E-mail":"電子郵件",
+"Salutation":"如何稱呼您",
+"Subject":"標題",
+"Location":"協會位置",
+"Send message":"送出訊息",
+"Message":"訊息內容"
 }

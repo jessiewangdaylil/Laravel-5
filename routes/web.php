@@ -43,5 +43,6 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('/signup', 'SignupController@signup');
     Route::get('/cart', 'CartController@cart');
     Route::get('/confirmation', 'ConfirmationController@confirmation');
+    Route::post('/sendmessage', 'ContactController@storeContact');
 
 });

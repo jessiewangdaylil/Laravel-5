@@ -21,5 +21,6 @@
 "Subject":"標題",
 "Location":"協會位置",
 "Send message":"送出訊息",
-"Message":"訊息內容"
+"Message":"訊息內容",
+"(Required)":"(必填)"
 }

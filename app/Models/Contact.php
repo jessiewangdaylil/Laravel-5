@@ -16,4 +16,9 @@ class Contact extends Model
         return $this->hasOne(Course::class);
     }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }

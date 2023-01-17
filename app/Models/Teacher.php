@@ -14,23 +14,8 @@ class Teacher extends Model
         return $this->hasOne(Cgy::class);
     }
 
-
-
-
-
-    public function cgies()
+    public function user()
     {
-        return $this->hasMany(Cgy::class);
+        return $this->belongsTo(User::class);
     }
-
-
-
-    public function tags()
-    {
-        return $this->belongsToMany(Tag::class);
-    }
-
-    public function cgy(){
-       return $this->belongsTo(Cgy::class);
-    }
-}
+};

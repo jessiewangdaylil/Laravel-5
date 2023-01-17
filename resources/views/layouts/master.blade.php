@@ -63,7 +63,8 @@
                     <a href="{{url('/login')}}" class="in">{{__('SignIn')}}</a>
                 </div>
                 <nav class="main-menu mobile-menu">
-                    <ul>
+                  {{menu('headerMenu','menu.header')}}
+                    {{-- <ul>
                         <li><a class="active" href="{{url('/')}}">{{__('Home')}}</a></li>
                         <li><a>{{__('CourseString')}}</a>
                             <ul class="sub-menu">
@@ -82,12 +83,11 @@
                             <ul class="sub-menu">
                               <li><a href="{{url('/cart')}}">{{__('Cart')}}</a></li>
                               <li><a href="{{url('/checkout')}}">{{__('CheckOut')}}</a></li>
-                              <li><a href="{{url('/confirmation')}}">{{__('Confirmation')}}</a></li>
+                              <li><a href="{{url('/information')}}">{{__('information')}}</a></li>
                             </ul>
                         </li>
 
-
-                    </ul>
+                    </ul>--}}
                 </nav>
             </div>
         </div>

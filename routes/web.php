@@ -44,5 +44,6 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('/cart', 'CartController@cart');
     Route::get('/confirmation', 'ConfirmationController@confirmation');
     Route::post('/sendmessage', 'ContactController@storeContact');
+    Route::get('/information', 'InformationController@information');
 
 });

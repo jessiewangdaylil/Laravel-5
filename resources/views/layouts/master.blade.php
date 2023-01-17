@@ -138,19 +138,20 @@
             </div>
             <div class="footer-widget">
                 <div class="row">
-                    <div class="col-lg-3 col-sm-6">
+                    {{ menu('footer','menu.footer')}}
+                    {{-- <div class="col-lg-3 col-sm-6">
                         <div class="single-footer-widget">
-                            <h4>About us</h4>
+                            <h4>{{__('About us')}}</h4>
                             <ul>
-                                <li>About Us</li>
+                                <li>{{__('About Us')}}</li>
                                 <li>Community</li>
                                 <li>Jobs</li>
                                 <li>Shipping</li>
                                 <li>Contact Us</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
+                    </div> --}}
+                    {{-- <div class="col-lg-3 col-sm-6">
                         <div class="single-footer-widget">
                             <h4>Customer Care</h4>
                             <ul>
@@ -185,7 +186,7 @@
                                 <li>Conformity of the products</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

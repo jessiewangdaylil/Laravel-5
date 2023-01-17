@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 class CourseOrder extends Pivot
 {
     use HasFactory;
+
 }

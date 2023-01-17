@@ -10,4 +10,10 @@ class Contact extends Model
     use HasFactory;
 
     protected $fillable = ['subject', 'message', 'email', 'name', 'phone'];
+
+    public function course()
+    {
+        return $this->hasOne(Course::class);
+    }
+
 }

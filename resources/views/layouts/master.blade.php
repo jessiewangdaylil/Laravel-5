@@ -63,7 +63,7 @@
                     <a href="{{url('/login')}}" class="in">{{__('SignIn')}}</a>
                 </div>
                 <nav class="main-menu mobile-menu">
-                  {{menu('headerMenu','menu.header')}}
+                  {{menu('header','menu.header')}}
                     {{-- <ul>
                         <li><a class="active" href="{{url('/')}}">{{__('Home')}}</a></li>
                         <li><a>{{__('CourseString')}}</a>

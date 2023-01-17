@@ -26,7 +26,11 @@ return new class extends Migration
             $table->timestamp('replied_at')->nullable(); //回覆日期
             $table->unsignedBigInteger('user_id')->index()->nullable(); //使用者
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade'); //外鍵是否同步刪除
+            $table->date('course_at')->nullable(); //許願課程時間
+            $table->enum('is_existcourse', ['否', '是', '免填'])->default('免填'); //是否存在此課程
+            $table->foreignId('course_id')->constrained()->nullable(); //許願已存在課程
             $table->timestamps();
+
         });
 
     }
@@ -38,6 +42,11 @@ return new class extends Migration
      */
     public function down()
     {
+
+        Schema::table('contacts', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+            $table->dropForeign(['course_id']);
+        });
         Schema::dropIfExists('contacts');
     }
 };

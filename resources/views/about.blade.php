@@ -5,7 +5,6 @@
 
 @section('content')
 
-<<<<<<< HEAD
 <!-- Lookbok Section Begin -->
     <section class="lookbok-section">
         <div class="container-fluid">
@@ -36,6 +35,4 @@
     <!-- Lookbok Section End -->
 
 
-=======
->>>>>>> 惟萱
 @endsection

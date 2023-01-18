@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,6 +14,7 @@ class Element extends Model
     {
         return $this->belongsTo(User::class);
     }
+
 //關聯設定結束 Relationship setting end
 
 //模型方法開始 Model Methods start

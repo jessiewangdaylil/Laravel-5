@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Models\Course;
+use App\Models\Teacher;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,12 +14,12 @@ class Cgy extends Model
     //找父分類有哪些分類(一對多)
     public function cgies()
     {
-        return $this->hasMany(Teacher::class);
+        return $this->hasMany(Cgy::class);
     }
     //找分類有屬於哪個父分類(一對一)
     public function cgy()
     {
-        return $this->belongsToMany(Teacher::class);
+        return $this->belongsToMany(Cgy::class);
     }
     //找分類有哪些老師(一對多)
     public function teachers()

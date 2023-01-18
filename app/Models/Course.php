@@ -2,6 +2,10 @@
 
 namespace App\Models;
 
+use App\Models\Cgy;
+use App\Models\Contact;
+use App\Models\Order;
+use App\Models\Teacher;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -22,12 +26,12 @@ class Course extends Model
     //找課程出現在那些訂單(多對多)
     public function orders()
     {
-        return $this->belongsToMany(Contact::class);
+        return $this->belongsToMany(Order::class);
     }
     //找課程由那些老師擔任(多對多)
     public function teachers()
     {
-        return $this->belongsToMany(Contact::class);
+        return $this->belongsToMany(Teacher::class);
     }
 //關聯設定結束 Relationship setting end
 

@@ -18,7 +18,7 @@ class User extends \TCG\Voyager\Models\User
     use TwoFactorAuthenticatable;
 
     /**
-     * The attributes that are mass assignable.
+     * The attributes that are mass assignable.白名單
      *
      * @var array<int, string>
      */
@@ -57,25 +57,26 @@ class User extends \TCG\Voyager\Models\User
     protected $appends = [
         'profile_photo_url',
     ];
-
+//關聯設定開始 Relationship setting start
+    //找使用者(管理員)改過那些網頁元素
     public function element()
     {
-        return $this->hasOne(Element::class);
+        return $this->hasMany(Element::class);
     }
-
+    //找使用者的老師身分
     public function teacher()
     {
         return $this->hasOne(Teacher::class);
     }
-
+    //找使用者填寫過的聯絡表
     public function contacts()
     {
         return $this->hasMany(Contact::class);
     }
-
+    //找使用者訂購過的訂單
     public function orders()
     {
         return $this->hasMany(Order::class);
     }
-
+//關聯設定結束 Relationship setting end
 }

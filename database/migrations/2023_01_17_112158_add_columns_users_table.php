@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('username')->nullable()->unique();
-            $table->string('type', 45); //使用者類別
+            $table->string('type', 45)->nullable(); //使用者類別
             $table->string('title', 45)->nullable(); //頭銜
             $table->string('first_name', 45)->nullable(); //姓
             $table->string('last_name', 45)->nullable(); //名

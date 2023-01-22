@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('username')->nullable()->unique();
-            $table->string('type', 45)->nullable(); //使用者類別
             $table->string('title', 45)->nullable(); //頭銜
             $table->string('first_name', 45)->nullable(); //姓
             $table->string('last_name', 45)->nullable(); //名
@@ -25,10 +24,7 @@ return new class extends Migration
             $table->date('birthday')->nullable(); //生日
             $table->string('tel', 20)->nullable(); //電話
             $table->string('mobile', 20)->nullable(); //手機號碼
-            $table->string('pic', 100)->nullable(); //圖片
-            $table->string('post_id', 5)->nullable(); //郵編
             $table->string('address', 100)->nullable(); //地址
-            $table->string('desc', 1000)->nullable(); //簡介
             $table->boolean('enabled')->default(true); //是否啟用
 
         });
